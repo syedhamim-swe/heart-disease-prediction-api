@@ -148,3 +148,49 @@ and types. `heart_disease: true` means the model predicts target class 1.
 - **Container exits on startup:** inspect logs with `docker-compose logs`.
 - **Port already in use:** change the left side of the Compose mapping, e.g.
   `8001:8000`, then open `http://localhost:8001/docs`.
+
+---
+
+## Live Deployment
+
+**Platform:** Render
+
+**Live API URL:** https://heart-disease-prediction-api-rejh.onrender.com
+
+**Swagger Documentation:** https://heart-disease-prediction-api-rejh.onrender.com/docs
+
+**Health Check:** https://heart-disease-prediction-api-rejh.onrender.com/health
+
+**Model Information:** https://heart-disease-prediction-api-rejh.onrender.com/info
+
+## Model Performance
+
+- Algorithm: Logistic Regression
+- Test Accuracy: 80.3%
+- Dataset: Heart Disease Dataset
+- Model Storage: Joblib
+
+## Docker Commands
+
+Build:
+
+```bash
+docker compose build
+```
+
+Run:
+
+```bash
+docker compose up
+```
+
+Stop:
+
+```bash
+docker compose down
+```
+
+## Disclaimer
+
+This project is developed for educational purposes only.
+It is not intended for medical diagnosis or treatment.
